@@ -43,6 +43,7 @@
 ### Hands On
 
 - Clone this repository: https://github.com/hittten/javascript-task-manager
+- Run `./move/to init`
 - Insert the `app.js` file in the HTML
 - Create a data mock const `TASKS` in `app.js` with these values:
   * id
