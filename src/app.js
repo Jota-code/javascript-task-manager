@@ -1,5 +1,8 @@
 console.log('hello world');
 
+
+//mock
+
 const TASKS = [
   {
     id: 1,
@@ -53,4 +56,26 @@ const TASKS = [
   },
 ];
 
+
+//elements
+
+const taskInputElement = document.querySelector('#taskInput')
+const taskListElement = document.querySelector('ul')
+const modalElement = document.querySelector('.modal')
+const modalYesButton = document.querySelector('#yes-btn')
+const modalNoButton = document.querySelector('#no-btn')
+const tasksLeftElement = document.querySelector('.info')
+const allButton = document.querySelector('#all-btn')
+const pendingButton = document.querySelector('#pending-btn')
+const completedButton = document.querySelector('#completed-btn')
+const filterButtons = [allButton,pendingButton,completedButton]
+
+for(task of TASKS) {
+  const liElement = document.createElement('li')
+  liElement.textContent+=task.description;
+  taskListElement.appendChild(liElement);
+}
+
 console.log(TASKS);
+console.log(filterButtons)
+
